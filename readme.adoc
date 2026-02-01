@@ -1,0 +1,28 @@
+= Taskflow
+:toc:
+:sectnums:
+ifndef::env-github[:icons: font]
+:note-caption: :paperclip:
+:important-caption: :exclamation:
+:warning-caption: :warning:
+
+[IMPORTANT]
+====
+The commit history of this branch is volatile. +
+Rebasing and force pushing happens at will. +
+The commits in this branch mostly collect changes with a narrow scope. +
+They rarely document code evolution. +
+The history may be rewritten without notice.
+====
+
+== Taskflow
+
+https://taskflow.github.io/
+
+https://github.com/taskflow/taskflow
+
+https://github.com/hghpublic/taskflow-taskflow
+
+A General-purpose Task-parallel Programming System::
+
+https://taskflow.github.io/taskflow/index.html
