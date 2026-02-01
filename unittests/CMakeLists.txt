@@ -47,6 +47,10 @@ foreach(unittest IN LISTS TF_UNITTESTS)
   target_link_libraries(${unittest} ${PROJECT_NAME} ${ATOMIC_LIBRARY} tf::default_settings)
   target_include_directories(${unittest} PRIVATE ${TF_3RD_PARTY_DIR}/doctest)
   doctest_discover_tests(${unittest})
+
+  set_target_properties(${unittest} PROPERTIES
+    FOLDER unittests
+  )
 endforeach()
 
 # include CUDA tests

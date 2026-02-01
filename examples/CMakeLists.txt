@@ -50,6 +50,10 @@ foreach(example IN LISTS TF_EXAMPLES)
     target_link_options(${example} PUBLIC -sASSERTIONS=1 -sPROXY_TO_PTHREAD -sTOTAL_MEMORY=1536MB -sEXIT_RUNTIME=1 -sUSE_PTHREADS=1)
     target_compile_options(${example} PUBLIC -matomics)
   endif()
+
+  set_target_properties(${example} PROPERTIES
+    FOLDER examples
+  )
 endforeach()
 
 # -----------------------------------------------------------------------------
