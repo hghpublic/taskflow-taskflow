@@ -1,1 +1,4 @@
 /build
+
+# macos
+.DS_Store
